@@ -1,0 +1,335 @@
+<!--DO NOT COPY, MODIFY AND/OR USE THIS CODE WITHOUT PERMISSION!-->
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!--meta-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        
+        <!--links-->
+        <link rel="stylesheet" href="main.css">
+        <title>Shorty News 2</title>
+        
+        <style>
+            p.intro, h1, td.icons-topics{
+                text-align: center;
+            }
+            h2 {
+                font-size: 37px;
+            }
+            
+            p{
+                text-align: left;
+            }
+            
+            div{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            img.iconsROP{
+                margin-left: 80%;
+                border: solid lightslategray 3px;
+            }
+            
+            img.icons-topics{                
+                width: 100%;
+                border: solid lightslategray 3px;
+                border-radius: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            td.icons-topics{
+                width:33.333333333333333%;
+                color: lightslategray
+            }
+            
+            img.mockups{
+                width: 75%
+            }
+            
+            
+            /* Reader tool */
+            div.readertool{
+                background-color: peachpuff;
+                border-radius: 3vw;
+                width: 100%;
+                height: 100%;
+                max-height: 1200px;
+            }
+            div.readertooltext{
+                padding: 1em;
+                font-family: Seravek;
+                color: saddlebrown;
+                overflow: auto;
+            }    
+            h1.readertool, h3.readertool, p.readertool{
+               font: Seravek;
+               color: saddlebrown;
+            }  
+            h1.readertool{
+                font-size: 250%
+            }   
+            h3.readertool{
+                text-align: right;
+            }  
+            p.readertool{
+                font-size: 10pt;
+            }
+          .slider{
+                -webkit-appearance: none;
+                appearance: none;
+                width: 100%;
+                height: 3px;
+                background: gray;
+                outline: none;
+                opacity: 0.7;
+                -webkit-transition:.2s;
+                transition: opacity .2s;
+            }
+            
+            .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                border: solid lightgrey 1.5px;
+                border-radius: 100%;
+                background-color: white;
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+            }     
+            .slider::-moz-range-thumb {
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+            }      
+            button {
+                height: 25px;
+                width: 25px;
+                border: solid lightgrey 1px;
+                border-radius: 100%;
+            }       
+            button.peachpuff{
+                background-color: peachpuff;
+            }
+            button.darkgray{
+                background-color: darkgray;
+            }
+            button.white{
+                background-color: white;
+            }
+            button.black{
+                background-color: black;
+            }
+     
+            
+            @media (prefers-color-scheme: dark) {
+                p.intro{
+                    color: white
+                }
+            }       
+        </style>
+    </head>
+    <body>
+        <main>
+            <!--Navigation bar-->
+        <div id="mySidenav" class="sidenav">
+            <table>
+                <tr>
+                    <td><p style="position: absolute; top:0; font-size: 20px; padding-left: 3%">Shortycuts</p></td>
+                    <td><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></td>
+                </tr>
+            </table>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="homepage.html">Homepage</a>
+            <a href="shortcuts.html">Shortcuts</a>
+        </div>
+        <span onclick="openNav()">
+            <p class="navigate">&#9776; Navigate</p>
+        </span>
+        
+       
+        <!--Site content-->
+        <h4 class="mediumlargeSpace" style="margin-bottom: 5%; text-align: center">Introducing: Shorty News 2</h4>
+        <h1>New <redmarked>design</redmarked>.<br> <redmarked>New</redmarked> functions.</h1>
+        
+        <div style="max-width: 450px; margin-top: 7.5%">
+            <p class="intro">The first big update has it all.<br> Shorty News become <redmarked>simplier</redmarked>, more <redmarked>intelligent, independent </redmarked>&<redmarked> user-friendly</redmarked>.</p>
+            <p class="largeSpace" style="text-align: center; font-weight: 300; border: solid 1px; border-radius: 7.5px; padding: 1% 0% 1.6% 0%; width: 45%; margin-left: auto; margin-right: auto">Coming soon</p>
+        </div>
+        
+        <!--Topics-->
+        <div class="largeSpace">
+            <img class="icons" src="Images/shortynews/icons/ROPsDesign/Light/topics.jpg">
+            
+            <h2 style="text-align: left; margin-top: 0%">Introducing <redmarked>Topics</redmarked></h2>
+            
+            <h3><redmarked>Another step into the future of Shortycuts.</redmarked></h3>
+            <p class="description">
+                "Topics" is a smart way to follow lastest news topics you like based on your specified keywords. The keyword is then searched in the 10 lastest articles from each source.
+            </p>
+            <img class="mockups" src="Images/shortynews/mockups/ROPsDesign/topicsModes.TIFF">
+            
+            <h3>How can I add topics?</h3>
+            <p>It's easy! When you start the first time after you update Shorty News to version 2.0, it'll ask you two questions:<br><br>
+            &bull; How many topics do you want to follow?<br>
+            &bull; Which topic do you want to follow? 
+            (The number of questions here is based on the number of topics you answered in the question above.)</p>
+            <p>Surely, you can configure "Topics" later. You can add/delete news topics either in its menu or in the settings.</p>
+            
+            
+            <h3><redmarked>Browse</redmarked></h3>
+            <p>For those who want to look up a topic and don't want to follow it, we offer you the opportunity to browse them. Just enter the keyword here.</p>
+            
+        </div>
+        
+        <!--ROP's Design-->
+        <div class="xlargeSpace">
+            <img src="Images/shortynews/others/shortynews-rop.jpeg" class="iconsROP">
+            <h2 style="text-align: right; margin-top: 0%">Introducing <redmarked>ROP's Design</redmarked></h2>
+            
+            <p class="description">You can't find only the ROP's beautiful menu design in his well-known shortcuts like MergeCuts or 1Backup. This design has already been taken over to other shortcut creators. Now, also in Shortycuts! Don't worry, the old icon menu is still available.</p>
+            <img class="mockups" src="Images/shortynews/mockups/ROPsDesign/mainmenuModes.TIFF">
+        </div>
+        
+        <!--Reader Tools-->
+        <div class="xlargeSpace">
+            <img class="icons" src="Images/shortynews/icons/ROPsDesign/Light/openwebsite.jpg">
+            <h2 style="margin-top: 0%">Introducing <redmarked>Reader Tools</redmarked></h2>
+            <p>Shorty News's Reader become more independent and user-friendly with the <redmarked>Reader Tools</redmarked>. It enables you, the way to set the Reader's apperance based on your wishes. You can change the font size and also the design of the Reader temporarily</p>
+            <img class="mockups" src="Images/shortynews/mockups/Reader/dark.PNG">
+            
+            <!--Interactive box-->
+            <h2 style="text-align: right">Preview <redmarked>Box</redmarked></h2>
+            <p style="text-align: right; margin-top: -3%">You can test this feature in the box below:</p>
+            <div id="readertoolbody" class="readertool largeSpace" style="margin-top: -1%">
+                <table style="width: 100%">
+                    <tr>
+                        <td style="width: 15%">
+                            <h3 id="readertoolh3" class="readertool">Aa</h3>
+                        </td>
+                        
+                        <td>
+                            <input type="range" min="13" max="20" value="13" class="slider">
+                        </td>
+                        
+                        <td>
+                            <div style="text-align: right">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <button class="peachpuff" onclick="peachpuff()"></button>
+                                            
+                                            <button class="darkgray" onclick="darkgray()"></button>
+                                            
+                                            <button class="white" onclick="white()"></button>
+                                            
+                                            <button class="black" onclick="black()"></button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="readertooltext">
+                    <h1 id="readertoolh1" class="readertool">Shorty News 2.0 has been finally released</h1>
+                    <p id="readertoolp" class="readertool">I'm so happy to announce the next step into the future of Shorty News - the version 2. Next to new designs and some new features and improvements, it'll be also possible to change the font size or the reader's design temporarily. This is an interactive box, so you can adjust this article with the tools above.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--Embed-a-Update X Shortcuts-->
+        <div class="xlargeSpace">
+            <img src="Images/shortynews/others/embed-a-update.jpg" class="icons">
+            <h2 style="margin-top: -0%"><bluemarked>Embed-a-Update</bluemarked> meets Shortycuts</h2>
+            <p>With the redesigned and tweaked 'Embed-a-Update' shortcut, Shorty News become more independent. The updater is design-oriented to make your experience of Shorty News even better and more comfortable. Special thanks to <bluemarked><strong>ROP</strong></bluemarked>, who makes the beautiful download template of this updater.</p>
+            <h3>Whast is <bluemarked>Embed-a-Update?</bluemarked></h3>
+            <p>Embed-a-Update is an intergrated updater shortcut. It checks for updates of Shorty News on the shortcut provider platform RoutineHub, so you'll always be up-to-date and never miss an update.</p>
+            <h3>Why does Shortycuts integrate <bluemarked>Embed-a-Update</bluemarked> instead of <bluemarked> Swing Updater [E]?</bluemarked></h3>
+            <p>Swing Updater [E] has been replaced, because Shorty News is going to be independent of any updaters with a third-party developer. Embed-a-Update enables the opportunity to develop it with ideas and concepts of any developer, so it has <bluemarked>no copyright</bluemarked>. The customization and the further development is free for everyone. That's why some new updates and improvements will follow in the future.</p>
+        </div>
+        
+        <!--Badges-->
+            <div class="container largeSpace">
+                <a href="https://routinehub.co/shortcut/4303">
+                    <img class="mockups" src="Images/banners/routinehub.PNG">
+                </a>
+            </div>
+            <img class="mockups bannerSpace" src="Images/banners/shortycutsbanner.PNG">
+        
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        <script>
+            $('input').on('change', function(){
+                var v = $(this).val();
+                $('p.readertool').css('font-size',v+'pt')
+            });
+        </script>
+        <script>
+            var readertool = document.getElementById("readertoolbody");
+            var readertooltexth1 = document.getElementById("readertoolh1");
+            var readertooltexth3 = document.getElementById("readertoolh3");
+            var readertooltextp = document.getElementById("readertoolp"); 
+            function peachpuff() {
+                readertool.style["background-color"] = "peachpuff";
+                readertooltexth1.style["color"] = "saddlebrown";
+                readertooltexth3.style["color"] = "saddlebrown";
+                readertooltextp.style["color"] = "saddlebrown";
+                readertool.style["border-style"] = "none";
+            } 
+            function darkgray() {
+                readertool.style["background-color"] = "darkgray";
+                readertooltexth1.style["color"] = "white";
+                readertooltexth3.style["color"] = "white";
+                readertooltextp.style["color"] = "white";
+                readertool.style["border-style"] = "none";
+            }
+            function white() {
+                readertool.style["background-color"] = "white";
+                readertooltexth1.style["color"] = "black";
+                readertooltexth3.style["color"] = "black";
+                readertooltextp.style["color"] = "black";
+                readertool.style["border-style"] = "none";
+            }
+            function black() {
+                readertool.style["background-color"] = "black";
+                readertooltexth1.style["color"] = "white";
+                readertooltexth3.style["color"] = "white";
+                readertooltextp.style["color"] = "white";
+                readertool.style["border-style"] = "solid";
+                readertool.style["border-color"] = "white";
+                readertool.style["border-width"] = "1px";
+            }    
+        </script>
+        </main>
+        
+        <footer>
+            <h4>
+                <p style="margin-bottom: 0%">Links</p>
+                <a class="footer" href="https://routinehub.co/user/Shortycuts">RoutineHub</a><br>
+                <a class="footer"   href="https://www.reddit.com/user/Shortycuts">Reddit</a><br>
+                <a class="footer" href="https://discordapp.com/invite/QdNjNee">Discord</a>
+            </h4>
+            <h4>
+                <p style="margin-bottom: 0%">Legal</p>
+                <a class="footer"  href="privacypolicy.html">Privacy Policy</a><br>
+            </h4>
+            <p2>1 - No liability if any third party providers track user data. Third party providers are Apple Inc. and all news sources in Shorty News. This is not an assumption.<br><br></p2>
+            <p2>We are not affilated, associated, authorized, endorsed by, or in any way officially connected with Apple Inc. or any of its subsidiaries or its affiliates. <br>We are not affilated, associated, authorized, endorsed by, or in any way officially connected with any news sources, that are in Shorty News available, or any of its subsidiaries or its affiliates.</p2>
+        </footer>
+    </body>  
+</html>

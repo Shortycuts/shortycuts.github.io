@@ -1,0 +1,238 @@
+/*DO NOT COPY, MODIFY AND/OR USE THIS CODE WITHOUT PERMISSION!*/
+
+main{     
+    font-family: system-ui;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+    padding: 5%;
+}
+
+footer{
+    font-family: system-ui;
+    max-width:650px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1% 5% 5% 5%;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: lightslategray;
+}
+
+/*Font settings*/
+h1{
+    font-weight: 800;
+    font-size: 45px
+}
+
+h2.headline {
+    font-weight: 300;
+    font-size: 40px;
+    margin-top: -30px
+}  
+
+h2.functions {
+    font-size: 37px;
+    margin-bottom: -7px
+}   
+
+h3{
+    font-size: 27px;
+}
+
+p{
+    font-size: 20px;
+    color: lightslategray;
+    text-align: justify-all
+}
+
+p2{
+    font-size: 10px;
+    color: lightslategray;
+}
+
+redmarked{
+    color: rgba(215,75,75,1)
+}
+
+bluemarked{
+    color: rgba(93,100,180,1)
+}
+
+skybluemarked{
+    color: skyblue;
+}
+
+yellowmarked{
+    color: rgba(199,133,36,1)
+}
+
+a{
+    text-decoration: none
+}
+
+a.footer{
+    color: lightslategray;
+    font-size: 10px;
+}
+
+a.footer:hover{
+    color: whitesmoke;
+}
+
+
+/*Table settings*/
+table{
+    width: 100%
+}
+
+table.shortcutbox{
+    border-style: solid;
+    border-radius: 20px;
+    margin-top: -20px;
+}
+
+td{
+    width: 50%;
+    padding: 2%;
+}
+
+code{
+    color: red;
+}
+
+
+/*Image settings*/
+img{
+    border-radius: 15%;
+    width: 100%
+}
+
+img.mockups{
+    border-radius: 0;
+    min-width: 150px;
+    max-width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+img.icons, img.iconsROP{
+    width: 20%;
+    border-radius: 100%;
+}
+
+/*Rows and Columns*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+}
+
+.column img {
+    vertical-align: middle;
+    margin-bottom: 10%
+}
+
+
+/*Spaces*/
+.xlargeSpace{
+    margin-top: 125px;
+}
+.largeSpace{
+    margin-top: 50px;
+}
+
+.mediumlargeSpace{
+    margin-top: 35px;
+}
+
+.mediumSpace{
+    margin-top: 20px;
+}
+
+.bannerSpace{
+    margin-top: 15px;
+}
+
+
+/*Others*/
+div.container:hover{
+    opacity: 0.5
+}
+
+
+/*Navigation bar*/
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: lightslategray;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.navigate:hover{
+    color: #f1f1f1
+}
+
+/*Dark-/Lightmode Detection*/
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white
+    }
+    .sidenav {
+        background-color: black
+    }
+    
+}
