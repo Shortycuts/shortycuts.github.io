@@ -1,0 +1,370 @@
+<!-- DO NOT COPY, MODIFY AND/OR USE THIS CODE WITHOUT PERMISSION! -->
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!--meta-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        
+        <!--links-->
+        <link rel="stylesheet" href="main.css">
+        
+        <title>Shorty News</title>
+        <style>
+            h1{
+                color: rgba(215,75,75,1);
+            }
+            h2.functions{
+                margin-top: -5px;
+            }
+            h2.button{
+                color: white;
+                font-weight: 300;
+                text-align: center;
+                font-size: 17px;
+            }
+            
+            h3.advantages{
+                margin-top: 0px;
+            }
+            
+            
+            img.icons-advantages{
+                width: 15%;
+                margin-left: 85%;
+            }
+            
+            img.newssources{
+                width: 90%;
+                border-radius: 100%;
+                border: solid 3px lightgray;
+            }
+            
+            div.button{
+                background-color: rgba(215,75,75,1);
+                border-radius: 10px;
+                padding: 0.15% 4% 0.15% 4%;
+                width: 225px;
+            }
+            
+            div.button:hover{
+                opacity: 0.5;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <main>
+            <!--Navigation bar-->
+            <div id="mySidenav" class="sidenav">
+                <table>
+                    <tr>
+                        <td><p style="position: absolute; top:0; font-size: 20px; padding-left: 3%">Shortycuts</p></td>
+                        <td><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></td>
+                    </tr>
+                </table>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="homepage.html">Homepage</a>
+                <a href="shortcuts.html">Shortcuts</a>
+            </div>
+            <span onclick="openNav()">
+                <p class="navigate">&#9776; Navigate</p>
+            </span>
+
+            <!--Site content-->
+            <!--Introduction-->
+            <div>
+                <h1>Shorty News</h1>
+                <h2 class="headline">Introduction</h2>
+                <p>
+                    Shorty News collects the lastest news from 60 popular news sources in 6 countries and bundles this for you in one place.<br>
+                    You can then select them and read or save them on your device.
+                </p>
+                <div class="button">
+                    <a href="shortynewsnewupdate.html"><h2 class="button">See what's new in version 2.0</h2></a></div>
+            </div>
+
+            <!--Advantages-->
+            <div class="xlargeSpace">
+                <h2 class="functions"><redmarked>Advantages</redmarked></h2>
+                <div class="mediumlargeSpace">
+                    <h3 class="advantages">No subscription - <redmarked>all free</redmarked></h3>
+                    <p>Shorty News is based on RSS feeds that the news sources offer. Everything is free and you don't need to transact a subscription with any news sources.</p>
+                </div>
+                <div class="mediumlargeSpace">
+                    <h3 class="advantages"><redmarked>No advertising</redmarked> with the detailed view</h3>
+                    <p>We all know that. Advertising - Everywhere, everytime. It's annoying! So I have tackled the matter and I develop the solution - the News Reader by Shortycuts in Shortcuts, the alternative way is the Safari Reader, which is also available here.</p>
+                </div>        
+                <div class="mediumlargeSpace">
+                    <h3 class="advantages"><redmarked>Privacy</redmarked> and <redmarked>Secutity</redmarked> </h3>
+                    <p>The private and data-safe use of Shortycuts's users are guaranteed here as well. Shortycuts will never track your data and save it without your permission<p2>1</p2>.</p>
+                </div>
+            </div>
+
+            <!--Functions-->
+
+            <!--News Bundle-->
+            <div class="xlargeSpace">
+                <img class="icons" src="Images/shortynews/icons/ROPsDesign/Light/newsbundle.jpg">
+                <h2 class="functions"><redmarked>News Bundle</redmarked></h2>
+                <p>News Bundle scours well-known news sources in six countries currently. The most recent articles will then be played back to you in an unique vCard menu.</p>
+                <p style="color: rgba(215,75,75,1)">So you always stay up-to-date and don't have  to travel across the internet.</p>
+                <img class="mockups" src="Images/shortynews/mockups/newsbundleModes.TIFF">
+            </div>
+
+            <!--Browse-->
+            <div class="largeSpace">
+                <img class="icons" src="Images/shortynews/icons/ROPsDesign/Light/browse.jpg">
+                <h2 class="functions"><redmarked>Browse</redmarked></h2>
+                <p>Browse focuses on every news source we offer from your country. If you select a news source, you will be offered up to 30 current articles.</p>
+                <img class="mockups mediumSpace" src="Images/shortynews/mockups/browseModes.TIFF">
+            </div>
+
+            <!--Topics-->
+            <div class="largeSpace">
+                <img class="icons" src="Images/shortynews/icons/ROPsDesign/Light/topics.jpg">
+                <h2 class="functions"><redmarked>Topics</redmarked>
+                </h2>
+                <p><redmarked>Topics</redmarked> is a smart way to follow lastest news topics you like based on your specified keywords. The keyword is then searched in the 10 lastest articles from each source.</p>
+                <img class="mockups" src="Images/shortynews/mockups/ROPsDesign/topicsModes.TIFF">
+            </div>
+
+            <!--Save-->
+            <div class="largeSpace">
+                <img class="icons" src="Images/shortynews/icons/ROPsDesign/Light/save.jpg">
+                <h2 class="functions"><redmarked>Save</redmarked></h2>
+                <p>
+                    Save is a wonderful way to save news articles offline. If you've found something appealing, you can save it and access it later, even when you're offline.
+                </p>
+                <img class="mockups mediumSpace" src="Images/shortynews/mockups/ROPsDesign/saveModes.TIFF">
+            </div>
+            
+            <!--Reader-->
+            <div class="largeSpace">
+                <img class="icons" src="Images/shortynews/icons/ROPsDesign/Light/openwebsite.jpg">
+                <h2 class="functions">Shorty News's <redmarked>Reader</redmarked></h2>
+                <h2><peachpuffmarked style="color: peachpuff">Personal. </peachpuffmarked><darkgraymarked style="color: darkgray">Unique. </darkgraymarked> Beautiful.</h2>
+                <p>After you select your article, Shorty News will show yor article in four different designs and in five different fonts, which of course you've already configured beforehand. This will make reading more comfortable.</p>
+                <img class="mockups" src="Images/shortynews/mockups/Reader/allmodes.TIFF">
+            </div>
+            
+            <!--News sources-->
+            <div class="xlargeSpace">
+                <h2 class="functions"><redmarked>News sources</redmarked> at Shorty News</h2>
+                <p>Shorty News currently offers you 60 news sources of  6 countries and it'll be more with every update.</p>
+                
+                <div>
+                    <!--United Kingdom-->
+                    <h3 class="headeline mediumlargeSpace">United <redmarked>Kingdom</redmarked> (16 providers)</h3>
+                    <div class="row mediumSpace">
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/uk/bbc.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/uk/dailymirror.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/uk/metro.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/uk/theindependent.PNG">
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/uk/channel4.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/uk/eveningstandard.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/uk/skynews.PNG">
+                            <img class="newssources" src="Images/shortynews/sources/uk/theirishtimes.PNG">
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/uk/dailyexpress.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/uk/irishindependent.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/uk/theguardian.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/uk/thesun.JPG">
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/uk/dailymail.PNG">
+                            <img class="newssources" src="Images/shortynews/sources/uk/men.PNG">
+                            <img class="newssources" src="Images/shortynews/sources/uk/thehuffingtonpost.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/uk/thetelegraph.JPG">
+                        </div>
+                    </div>
+
+                    <!--United States-->
+                    <h3 class="headeline mediumlargeSpace">United <redmarked>States</redmarked> of America (14 providers)</h3>
+                    <div class="row mediumSpace">
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/usa/abc.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/usa/breitbart.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/usa/cbsnews.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/usa/cnn.PNG">
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/usa/foxnews.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/usa/latimes.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/usa/nbcnews.PNG">
+                            <img class="newssources" src="Images/shortynews/sources/usa/newyorkpost.JPG">
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/usa/newyorktimes.PNG">
+                            <img class="newssources" src="Images/shortynews/sources/usa/nprnews.PNG">
+                            <img class="newssources" src="Images/shortynews/sources/usa/politico.JPG">
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/usa/reuters.PNG">
+                            <img class="newssources" src="Images/shortynews/sources/usa/usatoday.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/usa/yahoonews.JPG">
+                        </div>
+                    </div>
+
+                    <!--Germany-->
+                    <h3 class="headeline mediumlargeSpace"><redmarked>Germany</redmarked> (11 providers)</h3>
+                    <div class="row mediumSpace">
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/germany/bild.PNG">
+                            <img class="newssources" src="Images/shortynews/sources/germany/faz.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/germany/handelsblatt.PNG">
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/germany/ntv.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/germany/spiegel.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/germany/stern.JPG">
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/germany/sz.PNG">
+                            <img class="newssources" src="Images/shortynews/sources/germany/tagesschau.PNG">
+                            <img class="newssources" src="Images/shortynews/sources/germany/taz.JPG">
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/germany/welt.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/germany/zeit.JPG">
+                        </div>
+                    </div>
+
+                    <!--Netherlands-->
+                    <h3 class="headeline mediumlargeSpace"><redmarked>Netherlands</redmarked> (10 providers)</h3>
+                    <div class="row mediumSpace">
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/netherland/1limburg.PNG">
+                            <img class="newssources" src="Images/shortynews/sources/netherland/ad.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/netherland/detelegraaf.JPG">
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/netherland/nieuwsnl.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/netherland/nrc.PNG">
+                            <img class="newssources" src="Images/shortynews/sources/germany/stern.JPG">
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/netherland/nunl.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/netherland/omroepbrabant.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/netherland/omroepwest.JPG">
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/netherland/rtlnieuws.JPG">
+                            <img class="newssources" src="Images/shortynews/sources/netherland/tweakers.PNG">
+                        </div>
+                    </div>
+
+                    <!--Canada - Français-->
+                    <h3 class="headeline mediumlargeSpace"><redmarked>Canada</redmarked> - Français (3 providers)</h3>
+                    <div class="row mediumSpace">
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/canada-francais/cbcnews.JPG"> 
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/canada-francais/lapresse.PNG">
+
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/canada-francais/ledevoir.JPG">
+                        </div>
+                    </div>
+
+                    <!--Canada - English-->
+                    <h3 class="headeline mediumlargeSpace"><redmarked>Canada</redmarked> - English (2 providers)</h3>
+                    <div class="row mediumSpace">
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/canada-english/ctvnews.JPG"> 
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/canada-english/nationalpost.PNG">
+                        </div>
+                    </div>
+
+                    <!--Portugal-->
+                    <h3 class="headeline mediumlargeSpace"><redmarked>Portugal</redmarked> (2 providers)</h3>
+                    <div class="row mediumSpace">
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/portugal/diarodenoticias.jpg"> 
+                        </div>
+                        <div class="column">
+                            <img class="newssources" src="Images/shortynews/sources/portugal/jornaldenoticias.JPG">
+                        </div>
+                    </div>
+                </div>
+                
+                <h3><redmarked>Don't find</redmarked> your country and your favorite news source here?</h3>
+                <p>No problem! - Just write your suggestions into the comments on RoutineHub.co or contact Shortycuts. Shortycuts is on Reddit and Discord available.</p>
+            </div>
+            
+            <!--Credits-->
+            <div class="largeSpace">
+                <h2 class="functions"><redmarked>Credits</redmarked></h2> 
+                <p><strong>Developers of the Shortycuts Developer Team, who work on Shorty News</strong><br>
+                &bull; u/Shortycuts<br>
+
+                </p>
+                <p>
+                    <strong>Contributors</strong><br>
+                    &bull; u/ROP (Updater Download Template)<br>
+                </p>
+                <p>
+                    <strong>Others</strong><br>
+                    &bull; All news sources, that are in Shorty News available<br>
+                    &bull; All people, who suggest news sources<br>
+                    &bull; Icons by Font Awesome Icons<br>
+                    &bull; Translation in English (some parts) by Microsoft<br>
+                </p>
+            </div>
+            
+            <!--Compatibility-->
+            <div class="largeSpace">
+                <h2 class="functions"><redmarked>Compatibility</redmarked></h2>
+                <p><strong>Shorty News is compatible with:</strong><br>
+                &bull; all iPhones and iPads with iOS 13 (or newer)
+            </p>
+            </div>
+            
+            <!--Badges-->
+            <div class="container largeSpace">
+                <a href="https://routinehub.co/shortcut/4303">
+                    <img class="mockups" src="Images/banners/routinehub.PNG">
+                </a>
+            </div>
+            <img class="mockups bannerSpace" src="Images/banners/shortycutsbanner.PNG">
+
+            
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "100%";
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>         
+        </main>
+        
+        <footer>
+            <h4>
+                <p style="margin-bottom: 0%">Links</p>
+                <a class="footer" href="https://routinehub.co/user/Shortycuts">RoutineHub</a><br>
+                <a class="footer"   href="https://www.reddit.com/user/Shortycuts">Reddit</a><br>
+                <a class="footer" href="https://discordapp.com/invite/QdNjNee">Discord</a>
+            </h4>
+            <h4>
+                <p style="margin-bottom: 0%">Legal</p>
+                <a class="footer" href="termsofservice.html">Terms of service</a><br>
+                <a class="footer"   href="privacypolicy.html">Privacy Policy</a><br>
+            </h4>
+            <p2>1 - No liability if any third party providers track user data. Third party providers are Apple Inc. and all news sources in Shorty News. This is not an assumption.<br><br></p2>
+            <p2>We are not affilated, associated, authorized, endorsed by, or in any way officially connected with Apple Inc. or any of its subsidiaries or its affiliates. <br>We are not affilated, associated, authorized, endorsed by, or in any way officially connected with any news sources, that are in Shorty News available, or any of its subsidiaries or its affiliates.</p2>
+        </footer>
+    </body>
+</html>
