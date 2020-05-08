@@ -1,4 +1,5 @@
 <!-- DO NOT COPY, MODIFY AND/OR USE THIS CODE WITHOUT PERMISSION! -->
+<!-- DO NOT COPY, MODIFY AND/OR USE THIS CODE WITHOUT PERMISSION! ©SHORTYCUTS -->
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -15,83 +16,62 @@
     <body>
         <main>
             <!--Navigation bar-->
-        <div id="mySidenav" class="sidenav">
-            <table>
-                <tr>
-                    <td><p style="position: absolute; top:0; font-size: 20px; padding-left: 3%">Shortycuts</p></td>
-                    <td><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></td>
-                </tr>
-            </table>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Homepage</a>
-            <a href="shortcuts.html">Shortcuts</a>
-        </div>
-        <span onclick="openNav()">
-            <p class="navigate">&#9776; Navigate</p>
-        </span>
-        
-        <!--Site content-->
-        <div>
-            <h1>Shortcuts</h1>
-            <p>These shortcuts were created with a lot of work, love and fun. Every shortcut has to pass a quality inspection. Updates will follow regulary to give you a better experience.</p>
-            
-            <!--Shorty News-->
-            <div class="container largeSpace">
-                <a href="shortynews.html">
-                    <h3 style="color: rgba(215,75,75,1)">Shorty News</h3>
-                    <table class="shortcutbox" style="border-color: rgba(215,75,75,1)">
-                        <tr>
-                            <td style="width: 25%">
-                                <img src="Images/shortcuts/shortynews.jpg" align="right" style="border-radius: 20px">
-                            </td>
-                            <td style="width: 75%">
-                                <p style="color: rgba(215,75,75,1)">Shorty News is a shortcut news platform with 90 news sources over 11 countries</p>
-                            </td>
-                        </tr>
-                    </table>
-                </a>
+            <div id="mySidenav" class="sidenav">
+                <table>
+                    <tr>
+                        <td><p style="position: absolute; top:0; font-size: 20px; padding-left: 3%">Shortycuts</p></td>
+                        <td><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></td>
+                    </tr>
+                </table>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Homepage</a>
+                <a href="shortcuts.html">Shortcuts</a>
+            </div>
+            <span onclick="openNav()">
+                <p class="navigate">&#9776; Navigate</p>
+            </span>
+
+            <!--Site content-->
+            <div>
+                <h1>Shortcuts</h1>
+                <p>These shortcuts were created with a lot of work, love and fun. Every shortcut has to pass a quality inspection. Updates will follow regulary to give you a better experience.</p>
+
+               <div class="largeSpace">
+                    <div class="mediumSpace">
+                        <a href="shortynews.html">
+                            <div class="shortcuts-card" style="background-color: rgba(215,75,75,1)">
+                                <img src="Images/shortcuts/shortynews.jpg" class="shortcuts">
+                                <h3 style="color: white">Shorty News</h3>
+                                <p style="color: white">Shorty News is a shortcut news with 90 news sources over 11 countries</p>
+                            </div>
+                        </a>
+                        <a href="shortymusic.html">
+                            <div class="shortcuts-card" style="background-color: rgba(209,87,123,1)">
+                                <img src="Images/shortcuts/shortymusic.jpg" class="shortcuts">
+                                <h3 style="color: white">Shorty Music</h3>
+                                <p style="color: white">Shorty Music is your personal, simple, powerful and intelligent music assistant</p>
+                            </div>
+                        </a>  
+                        <a href="shortybriefing.html">
+                            <div class="shortcuts-card" style="background-color: rgba(199,133,36,1)">
+                                <img src="Images/shortcuts/shortybriefing.jpg" class="shortcuts">
+                                <h3 style="color: white">Shorty Briefing</h3>
+                                <p style="color: white">With Shorty Briefing you get a special, compact briefing for the morning or for now and then</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <!--Shorty Music-->
-            <div class="container">
-                <a href="shortymusic.html">
-                    <h3 style="color: rgba(234,128,156,1)">Shorty Music</h3>
-                    <table class="shortcutbox" style="border-color: rgba(234,128,156,1)">
-                        <tr>
-                            <td style="width: 25%">
-                                <img src="Images/shortcuts/shortymusic.jpg" align="right" style="border-radius: 20px">
-                            </td>
-                            <td style="width: 75%">
-                                <p style="color: rgba(234,128,156,1)">Shorty Music is your personal, simple, powerful and intelligent music assistant</p>
-                            </td>
-                        </tr>
-                    </table>
-                </a>
-            </div>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "100%";
+                }
 
-            <!--Shorty Briefing-->
-            <div class="container">
-                <a href="shortybriefing.html">
-                    <h3 style="color: rgba(199,133,36,1)">Shorty Briefing</h3>
-                    <table class="shortcutbox" style="border-color: rgba(199,133,36,1)">
-                        <tr>
-                            <td style="width: 25%"><img src="Images/shortcuts/shortybriefing.jpg" align="right" style="border-radius: 20px"></td>
-                            <td style="width: 75%"><p style="color: rgba(199,133,36,1)">With Shorty Briefing you get a special, compact briefing for the morning or for now and then</p></td>
-                        </tr>
-                     </table>
-                </a>
-            </div>
-        </div>
-        
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "100%";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
         </main>
         
         <footer>

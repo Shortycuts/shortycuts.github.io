@@ -1,4 +1,4 @@
-<!--DO NOT COPY, MODIFY AND/OR USE THIS CODE WITHOUT PERMISSION!-->
+<!--DO NOT COPY, MODIFY AND/OR USE THIS CODE WITHOUT PERMISSION! ©SHORTYCUTS -->
 
 <!DOCTYPE HTML>
 <html lang="en">
@@ -161,7 +161,7 @@
         
         <div style="max-width: 450px; margin-top: 7.5%">
             <p class="intro">The first big update has it all.<br> Shorty News become <redmarked>simplier</redmarked>, more <redmarked>intelligent</redmarked>, <redmarked> independent </redmarked>&<redmarked> user-friendly</redmarked>.</p>
-            <p class="largeSpace" style="text-align: center; font-weight: 300; border: solid 1px; border-radius: 7.5px; padding: 1% 0% 1.6% 0%; width: 45%; margin-left: auto; margin-right: auto">Now available</p>
+            <p class="largeSpace" style="text-align: center; font-weight: 300; border: solid 1px; border-radius: 7.5px; padding: 2%; width: 210px; margin-left: auto; margin-right: auto">Now available</p>
         </div>
         
         <!--Topics-->
@@ -174,7 +174,7 @@
             <p class="description">
                 "Topics" is a smart way to follow lastest news topics you like based on your specified keywords. The keyword is then searched in the 10 lastest articles from each source.
             </p>
-            <img class="mockups" src="Images/shortynews/mockups/ROPsDesign/topicsModes.PNG">
+            <img class="mockups" src="Images/shortynews/mockups/ROPsDesign/topicsModes.png">
             
             <h3>How can I add topics?</h3>
             <p>It's easy! When you start the first time after you update Shorty News to version 2.0, it'll ask you two questions:<br><br>
@@ -182,7 +182,6 @@
             &bull; Which topic do you want to follow? 
             (The number of questions here is based on the number of topics you answered in the question above.)</p>
             <p>Surely, you can configure "Topics" later. You can add/delete news topics either in its menu or in the settings.</p>
-            
             
             <h3><redmarked>Browse</redmarked></h3>
             <p>For those who want to look up a topic and don't want to follow it, we offer you the opportunity to browse them. Just enter the keyword here.</p>
@@ -195,7 +194,7 @@
             <h2 style="text-align: right; margin-top: 0%">Introducing <redmarked>ROP's Design</redmarked></h2>
             
             <p class="description">You can't find only the ROP's beautiful menu design in his well-known shortcuts like MergeCuts or 1Backup. This design has already been taken over to other shortcut creators. Now, also in Shortycuts! Don't worry, the old icon menu is still available.</p>
-            <img class="mockups" src="Images/shortynews/mockups/ROPsDesign/mainmenuModes.PNG">
+            <img class="mockups" src="Images/shortynews/mockups/ROPsDesign/mainmenuModes.png">
         </div>
         
         <!--Reader Tools-->
@@ -203,46 +202,7 @@
             <img class="icons" src="Images/shortynews/icons/ROPsDesign/Light/openwebsite.jpg">
             <h2 style="margin-top: 0%">Introducing <redmarked>Reader Tools</redmarked></h2>
             <p>Shorty News' Reader become more independent and user-friendly with  <redmarked>Reader Tools</redmarked>. It enables you the way to set the Reader's apperance based on your wishes. You can change the font size and also the design of the Reader temporarily</p>
-            <img class="mockups" src="Images/shortynews/mockups/Reader/dark.PNG">
-            
-            <!--Interactive box-->
-            <h2 style="text-align: right">Preview <redmarked>Box</redmarked></h2>
-            <p style="text-align: right; margin-top: -3%">You can test this feature in the box below:</p>
-            <div id="readertoolbody" class="readertool largeSpace" style="margin-top: -1%">
-                <table style="width: 100%">
-                    <tr>
-                        <td style="width: 15%">
-                            <h3 id="readertoolh3" class="readertool">Aa</h3>
-                        </td>
-                        
-                        <td>
-                            <input type="range" min="13" max="20" value="13" class="slider">
-                        </td>
-                        
-                        <td>
-                            <div style="text-align: right">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <button class="peachpuff" onclick="peachpuff()"></button>
-                                            
-                                            <button class="darkgray" onclick="darkgray()"></button>
-                                            
-                                            <button class="white" onclick="white()"></button>
-                                            
-                                            <button class="black" onclick="black()"></button>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <div class="readertooltext">
-                    <h1 id="readertoolh1" class="readertool">Shorty News 2.0 has been finally released</h1>
-                    <p id="readertoolp" class="readertool">I'm so happy to announce the next step into the future of Shorty News - the version 2. Next to new designs and some new features and improvements, it'll be also possible to change the font size or the reader's design temporarily. This is an interactive box, so you can adjust this article with the tools above.</p>
-                </div>
-            </div>
+            <img class="mockups" src="Images/shortynews/mockups/Reader/dark.PNG">   
         </div>
         
         <!--Embed-a-Update X Shortcuts-->
@@ -272,48 +232,6 @@
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
             }
-        </script>
-        <script>
-            $('input').on('change', function(){
-                var v = $(this).val();
-                $('p.readertool').css('font-size',v+'pt')
-            });
-        </script>
-        <script>
-            var readertool = document.getElementById("readertoolbody");
-            var readertooltexth1 = document.getElementById("readertoolh1");
-            var readertooltexth3 = document.getElementById("readertoolh3");
-            var readertooltextp = document.getElementById("readertoolp"); 
-            function peachpuff() {
-                readertool.style["background-color"] = "peachpuff";
-                readertooltexth1.style["color"] = "saddlebrown";
-                readertooltexth3.style["color"] = "saddlebrown";
-                readertooltextp.style["color"] = "saddlebrown";
-                readertool.style["border-style"] = "none";
-            } 
-            function darkgray() {
-                readertool.style["background-color"] = "darkgray";
-                readertooltexth1.style["color"] = "white";
-                readertooltexth3.style["color"] = "white";
-                readertooltextp.style["color"] = "white";
-                readertool.style["border-style"] = "none";
-            }
-            function white() {
-                readertool.style["background-color"] = "white";
-                readertooltexth1.style["color"] = "black";
-                readertooltexth3.style["color"] = "black";
-                readertooltextp.style["color"] = "black";
-                readertool.style["border-style"] = "none";
-            }
-            function black() {
-                readertool.style["background-color"] = "black";
-                readertooltexth1.style["color"] = "white";
-                readertooltexth3.style["color"] = "white";
-                readertooltextp.style["color"] = "white";
-                readertool.style["border-style"] = "solid";
-                readertool.style["border-color"] = "white";
-                readertool.style["border-width"] = "1px";
-            }    
         </script>
         </main>
         

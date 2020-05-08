@@ -1,238 +1,241 @@
-/*DO NOT COPY, MODIFY AND/OR USE THIS CODE WITHOUT PERMISSION!*/
+/* DO NOT COPY, MODIFY AND/OR USE THIS CODE WITHOUT PERMISSION! ©SHORTYCUTS */
 
-main{     
-    font-family: system-ui;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 650px;
-    padding: 5%;
+/* Some colors and font sizes base on the Human Interface Guidelines by Apple */
+
+/* Variables */
+:root{
+    --color-lightmode: rgb(99,99,102);
+    --color-lightmode-hover: rgb(174,174,178);
+    --color-darkmode: lightslategray;
+    --default-opacity: 0.6;
 }
 
-footer{
+/*General settings*/
+body {
     font-family: system-ui;
-    max-width:650px;
+    max-width: 900px;
+}
+main {
+    padding: 5%;
+}
+footer {
+    margin-top: 100px;
+    padding: 1% 5% 5% 5%;
+    border: solid 1px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+/*Groups*/
+body, table, img.mockups, img.contact{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 1% 5% 5% 5%;
-    border-style: solid;
-    border-width: 1px 0px 0px 0px;
-    border-color: lightslategray;
+}
+footer, p, p2, a.footer {
+    color: var(--color-lightmode);
+}
+p2, a.footer {
+    font-size: 8pt;
+}
+img, img.mockups, table{
+    width: 100%;
+}
+img.icons,
+img.iconsROP{
+    width: 20%;
+    border-radius: 100%;
+}
+.shortcuts-card, .shortcuts-card:hover, .sidenav, .sidenav a, img.hover-animation, img.hover-animation:hover {
+    transition: 0.5s;
 }
 
 /*Font settings*/
-h1{
+h1 {
     font-weight: 800;
-    font-size: 45px
+    font-size: 34pt;
 }
-
+h2 {
+    font-size: 28pt;
+}
 h2.headline {
     font-weight: 300;
-    font-size: 40px;
-    margin-top: -30px
-}  
-
+    margin-top: -30px;
+}
 h2.functions {
-    font-size: 37px;
-    margin-bottom: -7px
-}   
-
-h3{
-    font-size: 27px;
+    margin-bottom: -7px;
 }
-
-p{
-    font-size: 20px;
-    color: lightslategray;
-    text-align: justify-all
+h3 {
+    font-size: 22pt;
 }
-
-p2{
-    font-size: 10px;
-    color: lightslategray;
+p {
+    font-size: 17pt;
+    text-align: justify-all;
 }
-
-redmarked{
-    color: rgba(215,75,75,1)
+redmarked {
+    color: rgba(215,75,75,1);
 }
-
-bluemarked{
-    color: rgba(93,100,180,1)
+bluemarked {
+    color: #5d64b4;
 }
-
-skybluemarked{
+skybluemarked {
     color: skyblue;
 }
-
-yellowmarked{
-    color: rgba(199,133,36,1)
+yellowmarked {
+    color: #c78524;
 }
-
-a{
-    text-decoration: none
+a {
+    text-decoration: none;
 }
-
-a.footer{
-    color: lightslategray;
-    font-size: 10px;
-}
-
-a.footer:hover{
-    color: whitesmoke;
+a.footer:hover {
+    color: var(--color-lightmode-hover);
 }
 
 
 /*Table settings*/
-table{
-    width: 100%
-}
-
-table.shortcutbox{
-    border-style: solid;
-    border-radius: 20px;
-    margin-top: -20px;
-}
-
-td{
+td {
     width: 50%;
     padding: 2%;
 }
-
-code{
-    color: red;
+/*Card/Container settings*/
+.shortcuts-card {
+    height: 100%;
+    border: solid 2px rgb(199,199,204);
+    border-radius: 10px;
+    padding: 5%;
+    margin-bottom: 2%;
+}
+.shortcuts-card:hover {
+    margin-left: 20px;
 }
 
 
 /*Image settings*/
-img{
+
+img {
     border-radius: 15%;
-    width: 100%
 }
-
-img.mockups{
+img.mockups {
     border-radius: 0;
-    min-width: 150px;
-    max-width: 450px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%
+    max-width: 500px;
+}
+img.contact{
+    max-width: 75px;
+}
+img.shortcuts {
+    width: 10%;
+    min-width: 60px;
+    border: solid 2px white;
+    border-radius: 7.5px;
+}
+img.hover-animation:hover {
+    opacity: var(--default-opacity);
 }
 
-img.icons, img.iconsROP{
-    width: 20%;
-    border-radius: 100%;
-}
 
 /*Rows and Columns*/
-
 .row {
     display: flex;
     flex-wrap: wrap;
 }
-
-.column {
+.column-25 {
     flex: 25%;
     max-width: 25%;
 }
-
+.column-50 {
+    flex: 50%;
+    max-width: 50%;
+}
 .column img {
     vertical-align: middle;
-    margin-bottom: 10%
+    margin-bottom: 10%;
 }
 
 
 /*Spaces*/
-.xlargeSpace{
-    margin-top: 125px;
+.xlargeSpace {
+    margin-top: 100px;
 }
-.largeSpace{
+.largeSpace {
     margin-top: 50px;
 }
-
-.mediumlargeSpace{
+.mediumlargeSpace {
     margin-top: 35px;
 }
-
-.mediumSpace{
-    margin-top: 20px;
+.mediumSpace {
+    margin-top: 25px;
 }
-
-.bannerSpace{
-    margin-top: 15px;
+.bannerSpace {
+    margin-top: 12.5px;
 }
-
-
-/*Others*/
-div.container:hover{
-    opacity: 0.5
-}
-
 
 /*Navigation bar*/
-
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: white; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    height: 100%;
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 50px;
+    /* Place content 50px from the top */
 }
-
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 25px;
-  color: lightslategray;
-  display: block;
-  transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color:  var(--color-lightmode);
+    display: block;
 }
-
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+    color: var(--color-lightmode-hover);
 }
-
+.navigate:hover {
+    color: var(--color-lightmode-hover);
+}
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
 }
-
 #main {
-  transition: margin-left .5s;
-  padding: 20px;
+    transition: margin-left 0.5s;
+    padding: 20px;
 }
-
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.navigate:hover{
-    color: #f1f1f1
+    .sidenav {
+        padding-top: 15px;
+    }
+        .sidenav a {
+        font-size: 18px;
+    }
 }
 
 /*Dark-/Lightmode Detection*/
-
 @media (prefers-color-scheme: dark) {
-    body {
+    /*General settings*/
+    body{
+        color: white;
+    }
+    /*Groups*/
+    body, .sidenav {
         background-color: black;
-        color: white
     }
-    .sidenav {
-        background-color: black
+    footer, p, p2, a.footer, .sidenav a{
+        color: var(--color-darkmode);
     }
-    
+    .sidenav a:hover, .navigate:hover, a.footer:hover{
+        color: white;
+    }
 }
